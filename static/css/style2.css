@@ -31,8 +31,11 @@
     position: absolute;
     top: 30%;
     left: 50%;
-    font-size: 6rem;
+    font-size: 4rem;
     transform: translate(-50%, -30%);
+  }
+  .bg2 {
+      z-index: 999;
   }
   
   .content {
