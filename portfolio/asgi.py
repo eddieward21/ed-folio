@@ -13,7 +13,7 @@ from channels.routing import URLRouter
 
 from portfolio.routing import websocket_urlpatterns
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'todo.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'portfolio.settings')
 django.setup()
 
 application = ProtocolTypeRouter({
