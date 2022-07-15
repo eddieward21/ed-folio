@@ -34,14 +34,14 @@ ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'website',
-
+    'portfolio',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
+    'channels'
 
 
 ]
@@ -109,6 +109,7 @@ SITE_ID = 2 #localhost:8000
 LOGIN_REDIRECT_URL = "/"
 
 WSGI_APPLICATION = 'portfolio.wsgi.application'
+ASGI_APPLICATION = 'portfolio.asgi.application'
 
 #ASGI_APPLICATION = 'portfolio.asgi.application'
 
