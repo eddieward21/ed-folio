@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&family=Poppins:wght@200&family=Roboto:wght@100&display=swap');
+
+html,body {
+    margin:0;
+    padding:0 0px;
+    font-family:'Montserrat';
+    box-sizing: border-box;
+    overflow-x: hidden;
+}   
+
+
+.main {
+    height:100vh;
+    width:100vw;
+    padding:0 60px;
+    background-color: rgb(59, 97, 76);
+    background-image: url("/static/images/side3.png");
+    box-sizing: border-box;
+}
+.half1 {
+    height:40%;
+    width:100%;
+}
+p {
+    margin: 0;
+    font-size: 13.5px;
+    margin-right: auto;
+}
+.header {
+    
+}
+.half2 {
+    width:100%;
+    color: white;
+    height:60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    box-sizing: border-box;
+    padding-bottom: 80px;
+
+}
+.title-block {
+    padding-right: 70px;
+}
+.title {
+    line-height:98%;
+    margin:0;
+    font-size: 28px;
+    font-weight: 400;
+}
+.left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+.left p {
+    font-size: 14px;
+
+}
+.left b {
+    font-size: 15px;
+}
+.middle p {
+    font-size: 14px;
+}
+
+.middle {
+    padding-left: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.contact-btn {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 4px;
+    height:80px;
+    width:380px;
+    background-color: white;
+    color:black;
+    border:1px solid black;
+    margin-right: auto;
+
+}
+.ps {
+    font-weight: bolder;
+    font-size: 13.5px;
+}
+.contact-btn:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-bottom:140px;
+}
+
+/* end about */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;400;500&family=Montserrat:wght@100;200;300;400;500;600&family=Poppins:wght@200&family=Roboto:wght@100&display=swap');
+
+.projects {    
+    font-family: 'League Spartan';
+    padding: 100px 8vw;
+    box-sizing: border-box;
+    width:100vw;
+    background-color: white;
+
+
+
+}
+.header-box {
+    padding-left:2vw;
+
+}
+.projects-header {
+    font-size: 50px;
+    margin-top: 8px;
+}
+.p-header-muted {
+    text-transform: uppercase;
+    color:rgb(173, 173, 173);
+    letter-spacing: 2px;
+}
+.projects-grid {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.project {
+    margin-top: 4vw;
+    cursor: pointer;
+    position: relative;
+    height:650px;
+    width:550px;
+}
+.project a:hover > .project-image {
+    opacity: 0.8;
+
+}
+.project-image {
+    height:100%;
+    width:100%;
+    opacity: 0.9;
+}
+.in-progress {
+    position: absolute;
+    top:25px;
+    right:1%;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 11px;
+}
+
+.info {
+    position: absolute;
+    height:30%;
+    width:100%;
+    padding-right:40%;
+    padding-left: 45px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color:white;
+    z-index: 3;
+    
+    padding-top: 25px;
+}
+.date {
+    margin-right: auto;
+    font-weight: 100;
+    font-size: 13px;
+
+}
+.project-name {
+    font-size: 30px;
+    margin: 0;
+    margin-top: 4px;
+    font-weight: 450;
+    margin-right: auto;
+    margin-bottom: auto;
+
+}

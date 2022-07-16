@@ -1,47 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
 {% load static %}
+<html lang="en">
 <head>
+    <link rel="stylesheet" href="{% static 'css/home2.css' %}">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>About Me</title>
 </head>
 <body>
+    <section class="main">
 
-    <nav> 
-    <a href="" class = "logo">Home</a>
-    <a href="" class = "logo">About</a>
-    <a href="" class = "logo">Contact</a>
-    </nav> 
+        <div class="half1"></div>
 
-    <section>
-        <img src="{% static 'images/bg.jpg' %}" alt="">
-        <img src="{% static 'images/moon.png' %}" id = "moon" alt="">
-        <img src="{% static 'images/mountain.png' %}" id = "mountain" alt="">
-        <img src="{% static 'images/road.png' %}" alt="">
-        <h2 id="text">Welcome</h2>
-        <a href="" id = "btn">Contact</a>
+        <div class="half2">
+            <div class="left">
+                <div class = "title-block">
+                <h1 class = "title">EDDIE MUSASHI WARD &mdash; FULLSTACK DEV. &mdash; TENAFLY, NJ </h1>
+            </div>
+                <p>Aside from coding, my hobbies include playing basketball, watching Youtube, eating food, hanging out with friends, and (sometimes) lifting weights.</p>
+                <p><b>This Site</b><br>Developed with Django + Postgres in the backend and HTML, CSS, and lots of laggy Javascript in the frontend</p>
+                <p>Many thanks to Youtube for everything I know about coding. Shoutout Dennis Ivy, DevEd, and Fireship.</p>
+            </div>
+            <div class="middle">
+                <p> 
+                    <b>Languages</b>
+                    <br>
+                    Python
+                    <br>
+                    Javascript
+                    <br>
+                    HTML
+                    <br>
+                    CSS
+                    <br>
+                    SQL
+                </p>
+
+                <p>
+                    <b>Frameworks</b>
+                    <br>
+                    Django
+                    <br>
+                    Express
+                    <br>
+                    React
+                </p>
+
+                <p>
+                    <b>My Tools</b>
+                    <br>
+                    AWS
+                    <br>
+                    GCP
+                    <br>
+                    Heroku
+                    <br>
+                    Figma
+                    <br>
+                    Photoshop
+                    <br>
+                    Postgres
+                    <br>
+                    Git
+                </p>
+
+
+            </div>
+            <div class="right">
+                <p>Got a Project?
+                    <br>
+                    Hit me up. Anytime.
+                </p>
+                
+                <button class = "contact-btn">edward.m.ward@gmail.com</button>
+                <p class = "ps"><em>For all collaborations, inquiries and dank memes, feel free to reach out as well.</em></p>
+            </div>
+
+        </div>
     </section>
-    <br>
-    <br>
-    <div class="sec">
-        <h2>fullstack Developer</h2>
-        <p>I am a fullstack developer who specializes in UI/UX Design. My specialty is in Python using Django, and JS in combination with HTML and CSS to create beautiful webpages.</p>
+
+
+
+    <section class = "projects">
+        <div class="header-box"> 
+            <p class="p-header-muted">Examples of my work</p>
+            <h1 class = "projects-header">Projects</h1>
+        </div>
+
+
+        <div class="projects-grid"> 
+        <div class="project from-left-1">
+            <a href="https://swipechat.herokuapp.com/" target="_blank">
+            <div class="info">
+                <p class = "in-progress">In Progress</p>
+                <p class = "date">Jun. 2022</p>
+                <h1 class = "project-name">Swipechat &mdash; video chat social media app</h1>
+            </div>
+            <img class = "project-image" src="{% static 'images/chat.jpg' %}" alt="">
+        </a>
+        </div>
+        <div class="project from-right-1">
+            <a href="http://redgreenapples.herokuapp.com/" target="_blank"> 
+            <div class="info">
+                <p class ="in-progress">In Progress</p>
+
+                <p class = "date">Mar. 2022</p>
+                <h1 class = "project-name">RGA &mdash; reviews for only the best restaurants</h1>
+            </div>
+            <img class = "project-image" src="{% static 'images/food.jpg' %}" alt="">
+        </a>
+        </div>
+        <div class="project from-left-2">
+            <a href="https://eddie-remind2.herokuapp.com/" target="_blank"> 
+            <div class="info">
+                <p class = "date">Jan. 2022</p>
+                <h1 class = "project-name">Eddie-remind &mdash; task tracking app</h1>
+            </div>
+            <img class = "project-image" src="{% static 'images/todo.jpg' %}" alt="">
+            </a>
+        </div>
+        <div class="project from-right-2">
+            <a href="https://eddie-fortune2.herokuapp.com/" target="_blank"> 
+            <div class="info">
+                <p class = "date">Dec. 2021</p>
+                <h1 class = "project-name">Fortune Teller &mdash; my first web developement project</h1>
+            </div>
+            <img class = "project-image" src="{% static 'images/fortune.jpg' %}" alt="">
+            </a>
+        </div>
+        <div class="project from-left-3">
+            <a href="https://github.com/eddieward21/Amazon_Review_Analysis" target="_blank">
+
+            <div class="info">
+                <p class = "date">Nov. 2021</p>
+                <h1 class = "project-name"> ML &mdash; sentiment analysis on amazon reviews</h1>
+            </div>
+            <img class = "project-image" src="{% static 'images/ML.jpg' %}" alt="">
+            </a>
+        </div>
+
     </div>
-
+    </section>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+    integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js"></script>
+    <script src = "{% static 'js/script2.js' %}"></script>
 </body>
-<script>
-    let moon = document.getElementById('moon');
-    let mountain = document.getElementById('mountain');
-    let btn = document.getElementById('btn');
-
-    window.addEventListener('scroll', function() {
-        let value = window.scrollY;1
-        mountain.style.left = value + 0.25 +  'px';
-        moon.style.top = value + 1.05 + 'px';
-    })
-
-</script>
 </html>

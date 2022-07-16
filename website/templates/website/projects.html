@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/projects.css' %}">
+</head>
+<body>
+    <section class = "projects">
+        <div class="project">
+            <div class="info">
+                <p class = "date">2022</p>
+                <h1 class = "project-name">Swipechat &mdash; video chat social media app</h1>
+            </div>
+            <img class = "project-image" src="{% static 'images/chat.jpg' %}" alt="">
+        </div>
+        <div class="project">
+            <div class="info">
+                <p class = "date">2022</p>
+                <h1 class = "project-name">RGA &mdash; reviews for only the best restaurants</h1>
+            </div>
+            <img class = "project-image" src="{% static 'images/food.jpg' %}" alt="">
+        </div>
+        <div class="project">
+            <div class="info">
+                <p class = "date">2022</p>
+                <h3 class = "project-name">Github &mdash; view all my projects</h3>
+            </div>
+            <img class = "project-image" src="{% static 'images/git.jpg' %}" alt="">
+        </div>
+    </section>
+</body>
+</html>

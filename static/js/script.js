@@ -28,6 +28,16 @@ let scene = new ScrollMagic.Scene({
   .addTo(controller);
 
 
+/*
+let scene2 = new ScrollMagic.Scene({
+triggerElement: "section",
+duration: "300%",
+triggerHook: 0,
+})  
+    .setTween(timeline)
+    .addTo(controller)
+*/
+
 const logo = document.querySelectorAll('#logo path');
 console.log(logo)
 

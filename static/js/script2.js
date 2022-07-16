@@ -2,35 +2,25 @@ let controller = new ScrollMagic.Controller();
 let timeline = new TimelineMax();
 
 timeline
-  .to(".rock", 10, {x:-300})
-  .to(".girl", 10, {y:-350}, "-=10")
+.from('.left', 10, {y:300})
+.from('.middle', 10, {y:300}, "-=10")
+.from('.right', 10, {y:300}, "-=10")
 
 
-  .fromTo(".bg1", { y: -50 }, { y: 0, duration: 10 }, "-=10")
-  .to(".content", 10, { top: "0%" }, "-=10")
+.fromTo('.from-left-1', { opacity: 0, x:-300 }, { opacity: 1, x:0, duration: 2 })  
+.fromTo('.from-right-1', { opacity: 0, x:300 }, { opacity: 1, x:0, duration: 2 })  
 
-  .fromTo(".bio-text", { opacity: 0 }, { opacity: 1, duration: 6 })
+.fromTo('.from-left-2', { opacity: 0, x:-300 }, { opacity: 1, x:0, duration: 2 })  
+.fromTo('.from-right-2', { opacity: 0, x:300 }, { opacity: 1, x:0, duration: 2 }) 
 
-  .fromTo(".me-container", { opacity: 0 }, { opacity: 1, duration: 6 })  
-
-
-
-  .fromTo(".me", { opacity: 0 }, { opacity: 0.7, duration: 3 })  
-
+.fromTo('.from-left-3', { opacity: 0, x:-300 }, { opacity: 1, x:0, duration: 2 })  
 
 let scene = new ScrollMagic.Scene({
-  triggerElement: "section",
-  duration: "300%",
-  triggerHook: 0,
+  triggerElement: ".main",
+  duration: "340%",
+  triggerHook: "100",
 })
   .setTween(timeline)
-  .setPin("section")
   .addTo(controller);
 
 
-const logo = document.querySelectorAll('#logo path');
-console.log(logo)
-
-for(let i = 0; i < logo.length; i++) {
-    console.log(`letter ${i} is ${logo[i].getTotalLength()}`)
-}

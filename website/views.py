@@ -6,6 +6,18 @@ def home(request):
 
     }
     return render(request, 'website/home.html', context)
+    
+def projects(request):
+    context = {
+
+    }
+    return render(request, 'website/projects.html', context)
+
+def about(request):
+    context = {
+
+    }
+    return render(request, 'website/about.html')
 
 def home2(request):
     context = {

@@ -59,7 +59,7 @@
     position: relative;
   }
   .skill1 {
-      animation: left-to-right 10s linear infinite;
+      animation: left-to-right 20s linear infinite;
       position: absolute;
       z-index: 999;
       top:10%;
@@ -67,7 +67,7 @@
       transform: translate(-50%, -50%);
   }
   .skill2 {
-    animation: right-to-left 14s linear infinite;
+    animation: right-to-left 28s linear infinite;
     position: absolute;
     z-index: 999;
     top:50%;
@@ -75,7 +75,7 @@
     transform: translate(-50%, -50%);
 }
 .skill3 {
-    animation: left-to-right2 18s linear infinite;
+    animation: left-to-right2 36s linear infinite;
     position: absolute;
     z-index: 999;
     top:90%;
@@ -304,17 +304,23 @@
 
 }
 .projects {
-    box-sizing: border-box;
     position: relative;
     height:100vh;
-    width:100%;
+    width:100vw;
     background-color: white;
-    display: flex;
-    flex-direction: column;
+    padding:10vw 2vw;
+
+}
+.grid {
+
+    position: relative;
+    display: grid;
     align-items: center;
     justify-content: center;
-
-
+    height:100%;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap:2vw
 }
 .projects-svg {
     position: absolute;
@@ -323,12 +329,14 @@
 }
 
 .project {
-    position: absolute;
-    height:500px;
-    width: 400px;
+    height:600px;
+    width: 510px;
 
 }
 .project img {
     height: 100%;
     width: 100%;
 }
+
+
+
