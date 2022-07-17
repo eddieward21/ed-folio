@@ -13,7 +13,6 @@ html,body {
     height:100vh;
     width:100vw;
     padding:0 60px;
-    background-color: rgb(59, 97, 76);
     background-image: url("/static/images/side3.png");
     box-sizing: border-box;
 }
@@ -41,6 +40,7 @@ p {
 }
 .title-block {
     padding-right: 70px;
+
 }
 .title {
     line-height:98%;
@@ -101,7 +101,7 @@ p {
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    padding-bottom:140px;
+    padding-bottom: 140px
 }
 
 /* end about */
@@ -200,10 +200,123 @@ p {
 
 /*artsy */
 
-.artsy {
-    height:100vh;
-    width: 100vw;
+.about {
+    height:fit-content;
+    width: 100%;
+    height: 100vh;
     background-color: black;
+    position: relative;
+    padding: 200px 100px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.about-svg-1 {
+    position: absolute;
+    top:3%;
+    right:3%;
+    z-index: 99;
+}
+.about-svg-2 {
+    position: absolute;
+    top:8%;
+    right:3%;
+    z-index: 99;
+}
+.about-svg-3 {
+    position: absolute;
+    top:13%;
+    right:3%;
+    z-index: 99;
+}
+.gif {
+    object-fit: cover;
+    height: 500px;
+    width:400px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
 }
 
 
+.contact {
+    height:100vh;
+    width:100vw;
+    background-color: rgb(21, 24, 23);
+}
+.contact-grid {
+    height: 100%;
+    width:100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.contact-form {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+.map {
+    height:100%;
+    width: 100%;
+}
+.map img {
+    height:100%;
+    object-fit: cover;
+    width: 100%;
+}
+@media only screen and (max-width: 600px) {
+    .main {
+        padding: 0 10px;
+        background-position: top ;
+        object-fit: cover;
+        background-image: url("/static/images/side3.2.png");
+    }
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    .projects {
+        padding-top: 50px;
+    }
+    .project {
+        margin-top: 0;
+        height:400px;
+        width:300px;
+    }
+    .project-name {
+        font-size: 25px;
+    }
+    .p-header-muted {
+        font-size: 8px;
+    }
+    .projects-header {
+        font-size: 25px;
+    }
+    .title {
+
+    };
+    .middle p {
+        font-size: 12px;
+    }    
+
+    .title-block {
+        padding-right: 0px;
+    }
+    .contact-btn {
+        height:40px;
+        width: 190px;
+        font-size: 13px
+    };
+    .left p {
+        display: none;
+    }
+    .left b {
+        display: none;
+    }
+
+
+
+
+
+
+}
