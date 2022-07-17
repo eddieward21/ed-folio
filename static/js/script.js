@@ -6,9 +6,13 @@ let controller = new ScrollMagic.Controller();
 let timeline = new TimelineMax();
 
 timeline
-.from('.left', 10, {y:300})
-.from('.middle', 10, {y:300}, "-=10")
-.from('.right', 10, {y:300}, "-=10")
+
+.from('.left', 10, {y:-300}, "-=10")
+
+.from('.middle', 10, {y:-300}, "-=10")
+.from('.right', 10, {y:-300}, "-=10")
+
+
 
 
 .fromTo('.from-left-1', { opacity: 0, x:-300 }, { opacity: 1, x:0, duration: 2 })  
