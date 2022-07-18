@@ -86,6 +86,14 @@ p {
     margin-right: auto;
 
 }
+.email-btn span {
+    font-family: 'Montserrat';
+    font-weight: 550;
+}
+.email-btn:hover {
+    background-color: whitesmoke;
+}
+
 .ps {
     font-weight: bolder;
     font-size: 13.5px;
@@ -321,7 +329,10 @@ font-weight: 600;
 .contact-form h1 {
     color:#00ac96;
     margin: 0;
-    font-size: 27px;
+    margin-top: 6px;
+    font-size: 33px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }
 .contact-form form {
     height: 100%;
@@ -347,6 +358,7 @@ font-weight: 600;
 .contact-field {
     font-size: 12px;    
     margin-right: auto;
+    letter-spacing: 3px;
 
 }
 
@@ -392,6 +404,7 @@ font-weight: 600;
     border: none;
     border-bottom: 1px solid black;
 }
+
 
 input {
     outline:none;
