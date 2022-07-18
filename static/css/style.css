@@ -419,16 +419,27 @@ input {
 
 @media only screen and (max-width: 600px) {
     .main {
-        padding: 0 10px;
         background-position: left top;
+        padding: 0 10px;
+    }
+    .half1{
+        height: 70%;
     }
     .half2 {
         grid-template-columns: 1fr 1fr;
-        gap:4vw
+        gap:4vw;
+        height: 30%;
 
     }
     .middle {
         display: none;
+        
+    }
+    .left {
+        padding-bottom: 0;
+    }
+    .right {
+        padding-bottom: 0;
     }
     .projects-grid {
         grid-template-columns: 1fr;
@@ -487,6 +498,7 @@ input {
     .map {
         height: 100vh;
     }
+
 
 
 }

@@ -186,7 +186,7 @@
     <section class = "contact">
       <div class="contact-grid">
         <div class="contact-form">
-          <h1>Contact Me</h1>
+          <h1 class = "contact-form-fade1">Contact Me</h1>
           <br>
           <div class = "contact-side-text"> 
           <p>You can either reach out by email or by filling out the form below.</p>
@@ -194,17 +194,17 @@
           <form method="POST">
             {% csrf_token %}
             <div>
-              <p class = "contact-field">First Name</p>
+              <p class = "contact-field f1">First Name</p>
               {{clientForm.name}}
             </div>
             <br>
             <div>
-              <p class = "contact-field">Email</p>
+              <p class = "contact-field f2">Email</p>
               {{clientForm.email}}
             </div>
             <br>
             <div class = "contact-bottom">
-              <p class = "contact-field">Type your message here.</p>
+              <p class = "contact-field f3">Type your message here.</p>
               {{clientForm.message}}
               <br>
               <button class ="msg-btn" type = "submit">Send Message!</button>
@@ -226,7 +226,7 @@
             <a href = "https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank" class = "email-btn"><span>Get in touch</span>&rarr;</a>
           </p> 
 
-          <p>
+          <p class = "map-fade3">
             <span class = "contact-bold">Check me out</span>
             <br>
             <a href="">Instagram</a>

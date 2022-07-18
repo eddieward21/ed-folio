@@ -47,7 +47,7 @@ timeline2
 
 let scene2 = new ScrollMagic.Scene({
   triggerElement: ".about",
-  duration: "120%",
+  duration: "100%",
   triggerHook: "100",
 })
   .setTween(timeline2)
@@ -58,17 +58,32 @@ let scene2 = new ScrollMagic.Scene({
 let timeline3 = new TimelineMax();
 
 timeline3
+.fromTo('.contact-form-fade1', {x: -300, opacity : 0}, {x:0, opacity: 1, duration: 10 })  
+.fromTo('.contact-side-text', {x: 300, opacity : 0}, {x:0, opacity: 1, duration: 6 })  
+
+.fromTo('.f1', {opacity : 0, x: -300}, {opacity: 1, x:0, duration: 6 })
+.fromTo('.f2', {opacity : 0, x: -300}, {opacity: 1, x:0, duration: 6 })
+.fromTo('.f3', {opacity : 0, x: -300}, {opacity: 1, x:0, duration: 6 })
+.fromTo('.msg-btn', {opacity : 0, x: 300}, {opacity: 1, x:0, duration: 6 })
+
 .fromTo('.map-fade1', {x: -300, opacity : 0}, {x:0, opacity: 1, duration: 6 })  
-.fromTo('.email-btn', {x: 300, opacity : 0}, {x:0, opacity: 1, duration: 6 })  
+.fromTo('.email-right', {x: 300, opacity : 0}, {x:0, opacity: 1, duration: 6 })  
+.fromTo('.map-fade3', {x: -300, opacity : 0}, {x:0, opacity: 1, duration: 6 })  
+
 
 
 
 
 let scene3 = new ScrollMagic.Scene({
   triggerElement: ".contact",
-  duration: "100%",
+  duration: "120%",
   triggerHook: "100",
 })
   .setTween(timeline3)
   .addTo(controller);
+
+
+
+
+
 
