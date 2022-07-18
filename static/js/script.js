@@ -82,6 +82,35 @@ let scene3 = new ScrollMagic.Scene({
   .setTween(timeline3)
   .addTo(controller);
 
+let cursor = document.querySelector('.cursor')
+
+let basketballDiv = document.querySelector('.fade7')
+
+basketballDiv.addEventListener('mouseover', () => {
+  console.log('Your mouse is over basketballDiv')
+  cursor.style.height = '300px'
+  cursor.style.width = '200px'
+  cursor.style.borderRadius = '0px'
+  cursor.style.backgroundImage = "url('https://media1.giphy.com/media/ZBoJJXx3Kqcww67yEh/giphy.gif?cid=ecf05e47hz3rl2j4b5dugfpjds6k7iced2ys8e2a4dn8o7t0&rid=giphy.gif&ct=g')"
+  cursor.style.backgroundPosition= "top center"
+  cursor.style.opacity = 0.5
+  cursor.style.cursor = "pointer"
+})
+basketballDiv.addEventListener('mouseleave', () => {
+  console.log('mouse left basketball Div')
+  cursor.style.height = '50px'
+  cursor.style.width = '50px'
+  cursor.style.borderRadius = '50%'
+
+})
+
+window.addEventListener('mousemove', function(e) {
+  cursor.style.display = "block"
+  cursor.style.top = e.pageY + 'px'
+  cursor.style.left = e.pageX + 'px'
+
+
+})
 
 
 
