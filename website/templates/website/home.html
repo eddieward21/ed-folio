@@ -73,7 +73,7 @@
                     Hit me up. Anytime.
                 </p>
                 
-                <button class = "contact-btn">edward.m.ward@gmail.com</button>
+                <a href = "https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank" class = "contact-btn">edward.m.ward@gmail.com</a>
                 <p class = "ps"><em>For all collaborations, inquiries and dank memes, feel free to reach out as well.</em></p>
             </div>
 
@@ -191,7 +191,8 @@
           <div class = "contact-side-text"> 
           <p>You can either reach out by email or by filling out the form below.</p>
         </div>
-          <form action="POST">
+          <form method="POST">
+            {% csrf_token %}
             <div>
               <p class = "contact-field">First Name</p>
               {{clientForm.name}}
@@ -222,7 +223,7 @@
             edward.m.ward@gmail.com
             <br>
             <br>
-            <a href="" class = "email-btn"><span>Get in touch</span>&rarr;</a>
+            <a href = "https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank" class = "email-btn"><span>Get in touch</span>&rarr;</a>
           </p> 
 
           <p>

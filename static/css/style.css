@@ -74,6 +74,10 @@ p {
     flex-direction: column;
 }
 .contact-btn {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     font-weight: bold;
     font-size: 16px;
