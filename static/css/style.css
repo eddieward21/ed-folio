@@ -320,6 +320,7 @@ p {
     width: 100%;
     background-color: black;
     color: white;
+    border-bottom: 0.1px solid white;
 }
 .contact-side-text {
     padding-left: 70%;
@@ -417,6 +418,32 @@ input {
     outline:none;
    }
 
+.footer {
+    color: #00ac96;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 15vw;
+    width:100vw;
+    background-color: black;
+}
+.footer-txt {
+    letter-spacing: 12px;
+    font-family: 'Poppins';
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+
+}
+.foot-left {
+    background-color: white;
+}
+.foot-right {
+    background-color: black;
+}
+
+
 @media only screen and (max-width: 600px) {
     .main {
         background-position: left top;
@@ -497,6 +524,9 @@ input {
     }
     .map {
         height: 100vh;
+    }
+    .footer {
+        display: none;
     }
 
 
