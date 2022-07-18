@@ -36,7 +36,7 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     box-sizing: border-box;
-    padding-bottom: 80px;
+    padding-bottom: 0px;
 
 }
 .title-block {
@@ -204,7 +204,7 @@ p {
 .about {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-
+    overflow-y: hidden;
     font-family: 'Poppins';
     color: rgb(154, 154, 154);
     font-weight: bolder;
@@ -231,7 +231,7 @@ p {
     justify-content: space-between;
     flex-direction: column;
     box-sizing: border-box;
-    padding-bottom: 200px;
+    padding-bottom: 6vw;
     padding-right: 200px;
 
 }   
@@ -268,7 +268,7 @@ p {
 
 }
 .about-small-text p {
-    font-size: 17px;
+    font-size: 14px;
 }
 .contact {
     height:100vh;
@@ -303,12 +303,14 @@ p {
     .half2 {
         grid-template-columns: 1fr 1fr;
         gap:4vw
+
     }
     .middle {
         display: none;
     }
     .projects-grid {
         grid-template-columns: 1fr;
+        gap:1vw
     }
     .projects {
         padding-top: 50px;
@@ -339,7 +341,7 @@ p {
     }
     .contact-btn {
         height:40px;
-        width: 190px;
+        width: 210px;
         font-size: 13px
     };
     .left p {
