@@ -84,26 +84,6 @@ let scene3 = new ScrollMagic.Scene({
 
 let cursor = document.querySelector('.cursor')
 
-let basketballDiv = document.querySelector('.fade7')
-
-basketballDiv.addEventListener('mouseover', () => {
-  console.log('Your mouse is over basketballDiv')
-  cursor.style.height = '300px'
-  cursor.style.width = '200px'
-  cursor.style.borderRadius = '0px'
-  cursor.style.backgroundImage = "url('https://media1.giphy.com/media/ZBoJJXx3Kqcww67yEh/giphy.gif?cid=ecf05e47hz3rl2j4b5dugfpjds6k7iced2ys8e2a4dn8o7t0&rid=giphy.gif&ct=g')"
-  cursor.style.backgroundPosition= "top center"
-  cursor.style.opacity = 0.5
-  cursor.style.cursor = "pointer"
-})
-basketballDiv.addEventListener('mouseleave', () => {
-  console.log('mouse left basketball Div')
-  cursor.style.height = '50px'
-  cursor.style.width = '50px'
-  cursor.style.borderRadius = '50%'
-
-})
-
 window.addEventListener('mousemove', function(e) {
   cursor.style.display = "block"
   cursor.style.top = e.pageY + 'px'
@@ -114,5 +94,123 @@ window.addEventListener('mousemove', function(e) {
 
 
 
+let monkeyDiv = document.querySelector('.fade1')
 
+monkeyDiv.addEventListener('mouseover', () => {
+  console.log('Your mouse is over monkeyDiv')
+  cursor.style.height = '170px'
+  cursor.style.width = '300px'
+  cursor.style.borderRadius = '0px'
+  cursor.style.backgroundImage = "url('/static/images/monkey.gif')"
+  cursor.style.backgroundPosition= "top"
+  cursor.style.opacity = 0.5
+  cursor.style.cursor = "pointer"
+  monkeyDiv.style.color = "black"
+  document.body.style.cursor = 'pointer';
+
+})
+monkeyDiv.addEventListener('mouseleave', () => {
+  console.log('mouse left basketball Div')
+  cursor.style.height = '50px'
+  cursor.style.width = '50px'
+  cursor.style.borderRadius = '50%'
+  monkeyDiv.style.color = "gray"
+  document.body.style.cursor = 'default';
+
+  cursor.style.backgroundImage = "none"
+
+
+})
+
+
+
+let basketballDiv = document.querySelector('.fade7')
+
+basketballDiv.addEventListener('mouseover', () => {
+  console.log('Your mouse is over basketballDiv')
+  cursor.style.height = '300px'
+  cursor.style.width = '200px'
+  cursor.style.borderRadius = '0px'
+  cursor.style.backgroundImage = "url('/static/images/basketball.gif')"
+  cursor.style.backgroundPosition= "top center"
+  cursor.style.opacity = 0.5
+  basketballDiv.style.color = "black"
+  document.body.style.cursor = 'pointer';
+
+
+})
+basketballDiv.addEventListener('mouseleave', () => {
+  console.log('mouse left basketball Div')
+  cursor.style.height = '50px'
+  cursor.style.width = '50px'
+  cursor.style.borderRadius = '50%'
+  basketballDiv.style.color = "gray"
+  document.body.style.cursor = 'default';
+
+  cursor.style.backgroundImage = "none"
+
+
+
+})
+
+
+let dogDiv = document.querySelector('.fade5')
+
+dogDiv.addEventListener('mouseover', () => {
+  console.log('Your mouse is over dogDiv')
+  cursor.style.height = '200px'
+  cursor.style.width = '300px'
+  cursor.style.borderRadius = '0px'
+  cursor.style.backgroundImage = "url('/static/images/dog.gif')"
+  cursor.style.backgroundPosition= "top"
+  cursor.style.opacity = 0.5
+  cursor.style.cursor = "pointer"
+  dogDiv.style.color = "black"
+  document.body.style.cursor = 'pointer';
+
+})
+dogDiv.addEventListener('mouseleave', () => {
+  console.log('mouse left basketball Div')
+  cursor.style.height = '50px'
+  cursor.style.width = '50px'
+  cursor.style.borderRadius = '50%'
+  dogDiv.style.color = "gray"
+  document.body.style.cursor = 'default';
+
+  cursor.style.backgroundImage = "none"
+
+
+})
+
+
+
+let backendDiv = document.querySelector('.fade3')
+
+backendDiv.addEventListener('mouseover', () => {
+  console.log('Your mouse is over backendDiv')
+  cursor.style.height = '170px'
+  cursor.style.width = '300px'
+  cursor.style.borderRadius = '0px'
+  cursor.style.backgroundImage = "url('/static/images/backend.gif')";
+  cursor.style.objectFit = 'scale-down'
+  cursor.style.backgroundPosition= "bottom"
+
+  cursor.style.opacity = 0.5
+  cursor.style.cursor = "pointer"
+  backendDiv.style.color = "black"
+  document.body.style.cursor = 'pointer';
+
+})
+backendDiv.addEventListener('mouseleave', () => {
+  console.log('mouse left basketball Div')
+  cursor.style.height = '50px'
+  cursor.style.width = '50px'
+  cursor.style.borderRadius = '50%'
+  backendDiv.style.color = "gray"
+  document.body.style.cursor = 'default';
+
+  cursor.style.backgroundImage = "none"
+
+
+})
 
