@@ -202,7 +202,7 @@ p {
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;400;500&family=Montserrat:wght@100;200;300;400;500;600&family=Poppins:wght@200&family=Roboto:wght@100;300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;400;500&family=Montserrat:wght@100;200;300;400;500;600&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700&display=swap');
 .about {
-    border-top: 1px solid black;
+    border-top: 0.1px solid rgb(122, 122, 122);
     border-bottom: 0.1px solid rgb(122, 122, 122);
 
     overflow-y: hidden;
@@ -300,12 +300,71 @@ p {
     grid-template-columns: 1fr 1fr;
 }
 .contact-form {
+    font-family: 'Montserrat';
+
     padding: 100px 8vw;
     box-sizing: border-box;
     height: 100%;
     width: 100%;
     background-color: black;
+    color: white;
 }
+.contact-side-text {
+    padding-left: 70%;
+    margin-left: auto;
+
+}
+.contact-side-text p{
+font-size: 9px;
+font-weight: 600;
+}
+.contact-form h1 {
+    color:#00ac96;
+    margin: 0;
+    font-size: 27px;
+}
+.contact-form form {
+    height: 100%;
+    padding-top:4vw;
+    padding-bottom: 15vw;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.contact-form form div{
+    width: 100%;
+}
+.contact-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.contact-field {
+    font-size: 12px;    
+    margin-right: auto;
+
+}
+
+.msg-btn {
+    color:#00ac96;
+    border:1px solid #00ac96;
+    letter-spacing: 3px;
+    background-color: transparent;
+    height:40px;
+    width:160px;
+    cursor: pointer;
+    margin-left: auto;
+
+}
+.msg-btn:hover {
+    background-color: rgb(30, 30, 30);
+}
+
 
 .map {
     padding: 100px 8vw;
@@ -322,11 +381,22 @@ p {
     padding-bottom: 15vw;
 
 }
-.map img {
-    height:100%;
-    object-fit: cover;
-    width: 100%;
+.email-btn {
+    text-decoration: none;
+    height:fit-content;
+    color: black;
+    width:200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    border-bottom: 1px solid black;
 }
+
+input {
+    outline:none;
+   }
+
 @media only screen and (max-width: 600px) {
     .main {
         padding: 0 10px;
@@ -353,7 +423,7 @@ p {
         width:300px;
     }
     .project-name {
-        font-size: 25px;
+        font-size: 22px;
     }
     .p-header-muted {
         font-size: 8px;
@@ -374,7 +444,7 @@ p {
     .contact-btn {
         height:40px;
         width: 210px;
-        font-size: 13px
+        font-size: 13px;
     };
     .left p {
         display: none;
@@ -394,5 +464,9 @@ p {
     .contact-grid {
         grid-template-columns: 1fr;
     }
+    .map {
+        height: 100vw;
+    }
+
 
 }

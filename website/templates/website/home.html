@@ -95,7 +95,7 @@
             <div class="info">
                 <p class = "in-progress">In Progress</p>
                 <p class = "date">Jun. 2022</p>
-                <h1 class = "project-name">Swipechat &mdash; video chat social media app</h1>
+                <h1 class = "project-name">Swipechat &mdash; video chat with new people today.</h1>
             </div>
             <img class = "project-image" src="{% static 'images/chat.jpg' %}" alt="">
         </a>
@@ -106,7 +106,7 @@
                 <p class ="in-progress">In Progress</p>
 
                 <p class = "date">Mar. 2022</p>
-                <h1 class = "project-name">RGA &mdash; reviews for only the best restaurants</h1>
+                <h1 class = "project-name">RGA &mdash; reviews for only the finest restaurants</h1>
             </div>
             <img class = "project-image" src="{% static 'images/food.jpg' %}" alt="">
         </a>
@@ -124,7 +124,7 @@
             <a href="https://eddie-fortune2.herokuapp.com/" target="_blank"> 
             <div class="info">
                 <p class = "date">Dec. 2021</p>
-                <h1 class = "project-name">Fortune Teller &mdash;first developement project</h1>
+                <h1 class = "project-name">Fortune Teller &mdash;first web developement project</h1>
             </div>
             <img class = "project-image" src="{% static 'images/fortune.jpg' %}" alt="">
             </a>
@@ -134,7 +134,7 @@
 
             <div class="info">
                 <p class = "date">Nov. 2021</p>
-                <h1 class = "project-name"> ML &mdash; sentiment analysis</h1>
+                <h1 class = "project-name"> ML &mdash; product sentiment analysis</h1>
             </div>
             <img class = "project-image" src="{% static 'images/ML.jpg' %}" alt="">
             </a>
@@ -186,6 +186,29 @@
     <section class = "contact">
       <div class="contact-grid">
         <div class="contact-form">
+          <h1>Contact Me</h1>
+          <div class = "contact-side-text"> 
+          <p>Have a project in mind? Share it with me! You can either reach out by email or by filling out the form below.</p>
+        </div>
+          <form action="POST">
+            <div>
+              <p class = "contact-field">First Name</p>
+              {{clientForm.name}}
+            </div>
+            <br>
+            <div>
+              <p class = "contact-field">Email</p>
+              {{clientForm.email}}
+            </div>
+            <br>
+            <div class = "contact-bottom">
+              <p class = "contact-field">Type your message here.</p>
+              {{clientForm.message}}
+              <br>
+              <button class ="msg-btn"type = "submit">Send Message</button>
+
+            </div>
+          </form>
 
         </div>
         <div class="map">
@@ -196,14 +219,18 @@
             <span class = "contact-bold">Email</span>
             <br>
             edward.m.ward@gmail.com
+            <br>
+            <br>
+            <br>
+            <a href="" class = "email-btn"><span>Get in touch</span>&rarr;</a>
           </p> 
 
           <p>
             <span class = "contact-bold">Check me out</span>
             <br>
-            Instagram
+            <a href="">Instagram</a>
             <br>
-            LinkedIn
+            <a href="">LinkedIn</a>
             <br>
           </p>
         </div>

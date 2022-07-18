@@ -1,8 +1,14 @@
 from django.shortcuts import render
-
+from .forms import ClientForm
 # Create your views here.
 def home(request):
+    clientForm = ClientForm()
+    if request.method == "POST":
+        clientForm = ClientForm(request.POST)
+        if clientForm.is_valid():
+            clientForm.save()
     context = {
+        'clientForm':clientForm
 
     }
     return render(request, 'website/home.html', context)
