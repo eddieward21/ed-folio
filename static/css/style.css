@@ -13,9 +13,9 @@ html,body {
     height:100vh;
     width:100vw;
     padding:0 60px;
-    background-image: url('/static/images/side3.png');
-    object-fit: cover;
+    background-image: url('/static/images/side.png');
     box-sizing: border-box;
+    background-size: cover;
 }
 .half1 {
     height:40%;
@@ -455,9 +455,16 @@ input {
     height: 5vh;
     width:5vh;
     border:1px solid #00ac96;
+    transition: all 200ms ease;
+
 }
 
+.grow {
+    transform: scale(1);
 
+    transition-property: background-image, transform;
+
+}
 
 @media only screen and (max-width: 600px) {
     .main {

@@ -111,8 +111,8 @@ monkeyDiv.addEventListener('mouseover', () => {
 })
 monkeyDiv.addEventListener('mouseleave', () => {
   console.log('mouse left basketball Div')
-  cursor.style.height = '50px'
-  cursor.style.width = '50px'
+  cursor.style.height = '5vh'
+  cursor.style.width = '5vh'
   cursor.style.borderRadius = '50%'
   monkeyDiv.style.color = "gray"
   document.body.style.cursor = 'default';
@@ -141,8 +141,8 @@ basketballDiv.addEventListener('mouseover', () => {
 })
 basketballDiv.addEventListener('mouseleave', () => {
   console.log('mouse left basketball Div')
-  cursor.style.height = '50px'
-  cursor.style.width = '50px'
+  cursor.style.height = '5vh'
+  cursor.style.width = '5vh'
   cursor.style.borderRadius = '50%'
   basketballDiv.style.color = "gray"
   document.body.style.cursor = 'default';
@@ -171,8 +171,8 @@ dogDiv.addEventListener('mouseover', () => {
 })
 dogDiv.addEventListener('mouseleave', () => {
   console.log('mouse left basketball Div')
-  cursor.style.height = '50px'
-  cursor.style.width = '50px'
+  cursor.style.height = '5vh'
+  cursor.style.width = '5vh'
   cursor.style.borderRadius = '50%'
   dogDiv.style.color = "gray"
   document.body.style.cursor = 'default';
@@ -200,16 +200,20 @@ backendDiv.addEventListener('mouseover', () => {
   backendDiv.style.color = "black"
   document.body.style.cursor = 'pointer';
 
+  cursor.style.classList.add('grow')
+
 })
 backendDiv.addEventListener('mouseleave', () => {
   console.log('mouse left basketball Div')
-  cursor.style.height = '50px'
-  cursor.style.width = '50px'
+  cursor.style.height = '5vh'
+  cursor.style.width = '5vh'
   cursor.style.borderRadius = '50%'
   backendDiv.style.color = "gray"
   document.body.style.cursor = 'default';
 
   cursor.style.backgroundImage = "none"
+
+  cursor.style.classList.remove('grow')
 
 
 })
