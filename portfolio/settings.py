@@ -247,4 +247,7 @@ if DEBUG == False:
 
 
 
-
+if os.getcwd() == "/website" or os.getcwd() == "portfolio":
+    SECURE_PROXY_SSL_HEADER = {"HTTP_X_FOWARDED_PROTO", "https"}
+    SECURE_SSL_REDIRECT = True
+    DEBUG = False
