@@ -28,6 +28,8 @@ let scene = new ScrollMagic.Scene({
   triggerElement: ".main",
   duration: "350%",
   triggerHook: "100",
+  reverse: false           // Allow animation to reverse when scrolling back up
+
 })
   .setTween(timeline)
   .addTo(controller);
