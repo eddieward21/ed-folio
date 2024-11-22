@@ -9,8 +9,8 @@ def home(request):
             clientForm.save()
     context = {
         'clientForm':clientForm
-
     }
+    
     return render(request, 'website/home.html', context)
     
 def projects(request):
